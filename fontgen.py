@@ -10,7 +10,7 @@ OUTPUT_DIR = 'output/'
 
 # Printable (visible) ascii range is 33..126
 # http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm
-for c in range(33, 100):
+for c in range(33, 126):
     if c is 92:
         # skip \
         continue
