@@ -19,6 +19,6 @@ for c in range(33, 126):
         use_esc = str("\\")
     else:
         use_esc = ''
-    os.system('convert -font {font} -pointsize {size} label:"{esc}{char}" {dir}tmp.xbm'
+    os.system('convert -font {font} -pointsize {size} label:"{esc}{char}" {dir}{num}.xbm'
               .format(font=FONT, size=SIZE, char=chr(c), esc=use_esc, num=c, dir=OUTPUT_DIR))
 
